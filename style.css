@@ -1,5 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 *{
     box-sizing: border-box;
     margin: 0px;
     padding: 0px;
+}
+
+:root {
+    --red: #ff3860;
+    --red-dark: #ff1443;
+    --red-light: #ff5c7c;
+    --blue: #498afb;
+    --blue-dark: #2674fa;
+    --blue-light: #6ca0fc;
+    --orange: #fa8142;
+    --orange-dark: #f96a1f;
+    --orange-light: #fb9865;
+    --green: #09c372;
+    --green-dark: #07a15e;
+    --green-light: #0be586;
+    --purple: #9166cc;
+    --purple-dark: #7d4bc3;
+    --purple-light: #a481d5;
+    --pink: #ff4088;
+    --pink-dark: #ff1c72;
+    --pink-light: #ff649e;
+    --gray0: #f8f8f8;
+    --gray1: #dbdbdb;
+    --gray2: #bebebe;
+    --gray3: #6c6c6c;
+    --gray4: #454545;
+    --gray5: #2a2a2a;
+    --gray5t: #0000005b;
+    --gray6: #121212;
+    --gray7: #0b0b0b;
+    --gray8: #040404;
+    --gray9: #000000;
+    --font-body: "sofia-pro",sans-serif;
+    --font-head: 'Poppins', "attribute-mono";
+    --font-code: "attribute-mono",monospace;
+}
+
+h1,h2,h3,h4,h5,p{
+    color: var(--gray0);
+    font-family: var(--font-head);
+}
+
+#wrapper{
+    background-color: #07a15e;
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+}
+
+#banner{
+    background-color: #2674fa;
+    flex: 2;
+
+    background-image: url(https://images.unsplash.com/photo-1625805866852-b2ab3e740530?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10% 0 3px 0;
+}
+
+#banner > div{
+    background-color: rgb(0, 0, 0, 0.8);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#banner > div > img{
+    filter: invert(1);
+    margin: -15px;
+    height: 17vh;
+}
+#banner > div > h1{
+    text-transform: capitalize;
+    font-weight: bold;
+    font-size: 2em;
+}
+
+
+#contentWrapper{
+    background-color: var(--gray8);
+    flex: 3;
+
+    display: flex;
+    flex-direction: column;
+    gap: 10%;
+    overflow: hidden;
+}
+
+#contentWrapper p{
+    font-size: 1.2em;
+    font-weight: 500;
+    color: var(--gray2);
+}
+
+#formWrapper{
+    background-color: var(--gray7);
+    box-shadow: 0px 5px 15px black;
 }
