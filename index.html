@@ -3,25 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign Up</title>
+    <title>Sign-Up | Playtest Market</title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
-    <link rel="icon" href="https://static.thenounproject.com/png/159313-200.png" type="image/icon">
+    <link rel="icon" href="img\game-controller.png" type="image/icon">
 </head>
 <body>
     <div id="wrapper">
         <aside id="banner">
             <div>
-                <img src="https://static.thenounproject.com/png/159313-200.png" alt="Icon">
+                <!-- <a href="https://www.flaticon.com/free-icons/gaming" title="gaming icons">Gaming icons created by Flat Icons - Flaticon</a> -->
+                <img src="img\game-controller.png" alt="Icon">
                 <h1>Playtest Market</h1>
             </div>
             <p>Photo by <a href="https://unsplash.com/@rudoy?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Ivan Rudoy</a> on <a href="https://unsplash.com/photos/black-crt-tv-turned-on-in-a-room-cJjkxNyCnPE?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a></p>
         </aside>
         <div id="contentWrapper">
             <div class="paddingRight">
-                <p class="rightDefaultText">This is not a real online service! You need something like this in your life to help you realixe your deepest dreams. Sign up now to get started.</p>
+                <p class="rightDefaultText">Dive into a dynamic community of game developers and testers. Elevate your playtesting experience for <em>free</em> and unlock valuable insights. Sign up now and power up your games!</p>
                 <br>
-                <p class="rightDefaultText">Get <em>Free</em> Playtesting Now!</p>
+                <p class="rightDefaultText">Level up your game with <em>free</em> playtesting!</p>
             </div>
 
             <form action="">
@@ -30,36 +31,36 @@
                     <div>
                         <div>
                             <label for="fName">First Name</label>
-                            <input required type="text" name="fName" id="fName">
+                            <input required type="text" name="fName" id="fName" placeholder=" " minlength="3" maxlength="20">
                             <p class="errorText">*Name must be 3-20 characters</p>
                         </div>
                         <div>
                             <label for="lName">Last Name</label>
-                            <input required type="text" name="lName" id="lName">
+                            <input required type="text" name="lName" id="lName" placeholder=" " minlength="3" maxlength="20">
                             <p class="errorText">*Name must be 3-20 characters</p>
                         </div>
                     </div>
                     <div>
                         <div>
                             <label for="email">Email</label>
-                            <input required type="email" name="email" id="email">
+                            <input required type="email" name="email" id="email" placeholder=" ">
                             <p class="errorText">*Enter a valid email</p>
                         </div>
                         <div>
                             <label for="phoneNumber">Phone Number</label>
-                            <input required type="tel" name="phoneNumber" id="phoneNumber">
+                            <input required type="tel" name="phoneNumber" id="phoneNumber" minlength="9" maxlength="10" placeholder=" ">
                             <p class="errorText">*Enter a valid number</p>
                         </div>
                     </div>
                     <div>
                         <div>
                             <label for="password">Password</label>
-                            <input required type="password" name="password" id="password">
-                            <p class="errorText">*Password does not match</p>
+                            <input required type="password" name="password" id="password" placeholder=" ">
+                            <p class="errorText">*Passwords does not match</p>
                         </div>
                         <div>
                             <label for="passwordC">Confirm Password</label>
-                            <input required type="password" name="passwordC" id="PasswordC">
+                            <input required type="password" name="passwordC" id="passwordC" placeholder=" ">
                             <p class="errorText"></p>
                         </div>
                     </div>

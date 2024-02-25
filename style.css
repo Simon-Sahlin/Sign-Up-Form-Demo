@@ -86,9 +86,8 @@ a{
 }
 
 #banner > div > img{
-    filter: invert(1);
-    margin: -15px;
-    height: 17vh;
+    margin-right: 15px;
+    height: 13vh;
 }
 #banner > div > h1{
     text-transform: capitalize;
@@ -103,7 +102,7 @@ a{
 
     display: flex;
     flex-direction: column;
-    gap: 5%;
+    gap: 8%;
     overflow: hidden;
     padding-top: 10vh;
 }
@@ -155,10 +154,73 @@ input{
     padding: 5px;
     padding-left: 10px;
     width: 17vw;
+    transition: border .2s;
 }
 
-textarea{
-    color: #07a15e;
+/* Vad i helvette... */
+/* Varför är det goofy och tvingar mig att ha denna bajskoden bara för att chrome ska skita på sig när den autofillar forms... Jesus */
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active{
+    -webkit-box-shadow: 0 0 0 30px var(--gray9) inset !important;
+}
+input:-webkit-autofill{
+    -webkit-text-fill-color: white !important;
+}
+
+.errorText{
+    font-size: 0.8em;
+    color: var(--red-dark);
+}
+
+/* -------------------------------------------------------------------------- */
+/*                               Form Validation                              */
+/* -------------------------------------------------------------------------- */
+
+input:valid + .errorText{
+    opacity: 0;
+    user-select: none;
+}
+
+input:invalid + .errorText{
+    opacity: 1;
+    user-select: auto;
+}
+input:invalid{
+    border: 1px solid var(--red-dark);
+}
+
+input:placeholder-shown + .errorText, input:focus + .errorText{
+    opacity: 0;
+    user-select: none;
+}
+input:placeholder-shown, input:focus{
+    border: 1px solid var(--gray5);
+}
+input:focus{
+    outline: none;
+    border: 1px solid var(--themeDark);
+}
+
+.error.error + .errorText{
+    opacity: 1;
+    user-select: auto;
+}
+.error.error{
+    border: 1px solid var(--red-dark);
+}
+
+
+
+
+/* input:invalid{
+    border: 1px solid var(--red-dark);
+}
+
+input:invalid + .errorText{
+    opacity: 1;
+    user-select: auto;
 }
 
 .errorText{
@@ -168,11 +230,16 @@ textarea{
     user-select: none;
 }
 
-input:invalid + .errorText{
-    opacity: 1;
-    user-select: auto;
+input:empty{
+    border: 1px solid var(--gray5);
 }
 
+input:focus{
+    outline: none;
+    border: 1px solid var(--themeDark);
+} */
+
+/* ------------------------------------ - ----------------------------------- */
 
 button{
     background-color: var(--gray9);
