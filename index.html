@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Sign Up</title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
+    <link rel="icon" href="https://static.thenounproject.com/png/159313-200.png" type="image/icon">
 </head>
 <body>
     <div id="wrapper">
@@ -17,17 +18,57 @@
             <p>Photo by <a href="https://unsplash.com/@rudoy?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Ivan Rudoy</a> on <a href="https://unsplash.com/photos/black-crt-tv-turned-on-in-a-room-cJjkxNyCnPE?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a></p>
         </aside>
         <div id="contentWrapper">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero magni voluptates culpa dolores placeat vitae tempora ab, saepe sequi. Nulla labore ipsa voluptatem ratione obcaecati culpa, quis doloribus ex placeat nihil cumque ut illo soluta possimus consequuntur iste eligendi reiciendis rem veniam porro voluptas. Id adipisci ducimus consequatur non. Nostrum.</p>
-            <p>Get <em>Free</em> Playtesting Now!</p>
+            <div class="paddingRight">
+                <p class="rightDefaultText">This is not a real online service! You need something like this in your life to help you realixe your deepest dreams. Sign up now to get started.</p>
+                <br>
+                <p class="rightDefaultText">Get <em>Free</em> Playtesting Now!</p>
+            </div>
 
             <form action="">
-                <div id="formWrapper">
-                    <p>Let's do this!</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia dolores animi alias inventore vero, deserunt facilis, iste sit eius tempore, rem vitae illum! Officia architecto, necessitatibus, quod earum possimus, voluptatum voluptatibus minima hic facere rerum ea error blanditiis quibusdam natus.</p>
+                <div id="formWrapper" class="">
+                    <p class="rightDefaultText">Let's do this!</p>
+                    <div>
+                        <div>
+                            <label for="fName">First Name</label>
+                            <input required type="text" name="fName" id="fName">
+                            <p class="errorText">*Name must be 3-20 characters</p>
+                        </div>
+                        <div>
+                            <label for="lName">Last Name</label>
+                            <input required type="text" name="lName" id="lName">
+                            <p class="errorText">*Name must be 3-20 characters</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            <label for="email">Email</label>
+                            <input required type="email" name="email" id="email">
+                            <p class="errorText">*Enter a valid email</p>
+                        </div>
+                        <div>
+                            <label for="phoneNumber">Phone Number</label>
+                            <input required type="tel" name="phoneNumber" id="phoneNumber">
+                            <p class="errorText">*Enter a valid number</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            <label for="password">Password</label>
+                            <input required type="password" name="password" id="password">
+                            <p class="errorText">*Password does not match</p>
+                        </div>
+                        <div>
+                            <label for="passwordC">Confirm Password</label>
+                            <input required type="password" name="passwordC" id="PasswordC">
+                            <p class="errorText"></p>
+                        </div>
+                    </div>
                 </div>
+
+                <button type="submit" class="paddingRight">Create Account</button>
             </form>
             
-            <p>Already have an account? <a href="">Log in</a></p>
+            <p id="log-inText" class="paddingRight rightDefaultText">Already have an account? <a href="">Log in</a></p>
         </div>
     </div>
 </body>
